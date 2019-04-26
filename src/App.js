@@ -368,11 +368,9 @@ class App extends Component {
       }
 
       if (board[x][y].figure === "king-black") {
-        alert("The White Won");
         this.setState({ winner: "White" });
       }
       if (board[x][y].figure === "king-white") {
-        alert("The Black Won");
         this.setState({ winner: "Black" });
       }
       turn = turn === "white" ? "black" : "white"; // change turn after the move
